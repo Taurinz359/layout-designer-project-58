@@ -44,25 +44,18 @@ header::before {
 header {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 section {
   max-width: 1110px;
-  display: flex;
   padding-top: 100px;
   padding-bottom: 100px;
-  width: 100%;
-  position: relative;
 }
+
 
 .c-orange {
   color: var(--main-color);
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 .header-img {
@@ -72,4 +65,27 @@ section {
   top: 55px;
   right: -270px;
   z-index: -1;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  max-width: 1138px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.col-container p {
+  line-height: 26px;
+}
+
+.col-container {
+  columns: 2;
+  column-gap: 30px;
+}
+
+.mb-top {
+  margin-top: 10px;
 }
